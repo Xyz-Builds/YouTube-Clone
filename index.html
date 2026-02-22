@@ -415,8 +415,10 @@
       channelContainer.classList.toggle('active');
     });
 
-    document.addEventListener('click', () => {
-      channelContainer.classList.remove('active');
+    document.addEventListener('click', e => {
+      if (!channelContainer.contains(e.target)) {
+        channelContainer.classList.remove('active');
+      }
     });
   </script>
 
