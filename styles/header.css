@@ -230,7 +230,8 @@
 
 .channel-info {
   display: flex;
-  width: 240px;
+  width: 100%;
+  border-radius: 20px;
   flex-wrap: wrap;
   place-self: center;
   align-items: center;
@@ -287,13 +288,15 @@ hr.channel-divider {
   border: none;
   border-top: 1.5px solid #ccc;
   border-radius: 50%;
-  width: 260px;
+  width: 100%;
+  margin: 0;
   margin-top: 10px;
 }
 
 .divider-channel {
-  place-items: center;
+  justify-content: center;
   flex-basis: 100%;
+  margin: 0;
   width: 100%;
 }
 
@@ -413,6 +416,7 @@ hr.section-divider {
   padding-top: 3px;
   padding-bottom: 9px;
   margin: 0;
+  margin-top: 5px;
   text-align: left;
   background: white;
   border: none;
