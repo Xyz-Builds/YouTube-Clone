@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube - Home Of Videos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/sidebar.css">
+  <link rel="stylesheet" href="styles/video.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="left-section">
+    <img class="hamburger_menu" src="icons/hamburger-menu.png" alt="Sidebar-Toggle">
+    <a href="https://www.youtube.com/">
+      <img class="youtube_icon" src="icons/youtube_icon.png" alt="Youtube">
+    </a>
+  </div>
+
+  <div class="middle-section">
+    <div class="search-container">
+      <input class="search_bar" type="text" placeholder="Search">
+      <button class="search-button">
+        <img class="search-icon" src="icons/search.svg">
+      </button>
+    </div>
+    <button class="voice-button">
+      <img class="voice-icon" src="icons/voice-search-icon.svg">
+    </button>
+  </div>
+
+  <div class="right-section">
+    <button class="upload-button">
+      <img class="upload-icon" src="icons/upload.svg">
+    </button>
+
+    <button class="youtube-apps-button">
+      <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+    </button>
+
+    <button class="notifications-button">
+      <img class="notifications-icon" src="icons/notifications.svg">
+    </button>
+
+    <button class="search-mobile-button">
+      <img class="search-mobile" src="icons/search.svg">
+    </button>
+
+    <div class="channel-container">
+      <button class="my-channel-button">
+        <img class="my-channel-icon" src="channel_pfp/my-channel.png">
+      </button>
+
+      <div class="channel-items">
+
+        <div class="channel-info">
+          <img class="my-channel-icon2" src="channel_pfp/my-channel.png">
+          <div class="user-texts">
+            <b class="user-text">Hi, User</b>
+            <b class="user-text2">@default_handle</b>
+            <b class="view-channel">View Channel</b>
+          </div>
+          <div class="divider-channel">
+            <hr class="channel-divider">
+          </div>
+        </div>
+
+        <div class="channel-buttons">
+          <button class="google-account-button">
+            <img class="google-account" src="icons/google-icon.png"> Google Account
+          </button>
+
+          <a href="https://youtube.com/channel_switcher">
+            <button class="switch-account-button">
+            <img class="switch-account" src="icons/switch-account.png">
+            Switch Account
+            <img class="right-arrow" src="icons/right-arrow.png">
+          </button>
+          </a>
+
+          <button class="sign-out-button">
+            <img class="sign-out" src="icons/sign-out.png"> Sign Out
+          </button>
+
+          <div class="divider">
+            <hr class="section-divider">
+          </div>
+          <a href="https://studio.youtube.com/channel/">
+            <button class="youtube-studio-button">
+              <img class="youtube-studio" src="icons/youtube-studio.png"> YouTube Studio
+            </button>
+          </a>
+
+          <a href="https://www.youtube.com/paid_memberships?ybp=mAEK">
+            <button class="purchases-memberships-button">
+              <img class="purchases-memberships" src="icons/purchases-memberships.png">
+              Purchases & Memberships
+            </button>
+          </a>
+
+          <div class="divider">
+            <hr class="section-divider">
+          </div>
+
+          <a href="https://myaccount.google.com/u/0/yourdata/youtube?hl=en">
+            <button class="your-data-button">
+              <img class="your-data" src="icons/your-data.png"> Your Data In YouTube
+            </button>
+          </a>
+
+          <button class="appearence-button">
+            <img class="appearence" src="icons/appearence.png">
+            Appearence: Light
+            <img class="right-arrow2" src="icons/right-arrow.png">
+          </button>
+
+          <button class="display-lang-button">
+            <img class="display-lang" src="icons/display-lang.png">
+            Display Language: English
+            <img class="right-arrow3" src="icons/right-arrow.png">
+          </button>
+
+          <button class="restricted-mode-button">
+            <img class="restricted-mode" src="icons/restricted-mode.png">
+            Restricted Mode: Off
+            <img class="right-arrow4" src="icons/right-arrow.png">
+          </button>
+
+          <button class="location-button">
+            <img class="location" src="icons/location.png">
+            Location: Egypt
+            <img class="right-arrow5" src="icons/right-arrow.png">
+          </button>
+
+          <button class="keyboard-shortcuts-button">
+            <img class="keyboard-shortcuts" src="icons/keyboard.png">
+            Keyboard Shortcuts
+          </button>
+
+          <div class="divider">
+            <hr class="section-divider">
+          </div>
+
+          <a href="https://www.youtube.com/account">
+            <button class="settings-button">
+              <img class="settings" src="icons/settings.png"> Settings
+            </button>
+          </a>
+
+          <div class="divider">
+            <hr class="section-divider">
+          </div>
+
+          <button class="help-button">
+            <img class="help" src="icons/help.png"> Help
+          </button>
+
+          <button class="feedback-button">
+            <img class="feedback" src="icons/feedback.png"> Send Feedback
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</header>
+
+  <div class="categories">
+    <button class="category_all">All</button>
+    <button>Gaming</button>
+    <button>Recommended</button>
+    <button>YouTube Picks</button>
+    <button>Comedy</button>
+    <button>Music</button>
+    <button>Trending</button>
+    <button>Live Streams</button>
+    <button>Podcasts</button>
+    <button>Technology</button>
+    <button>Education</button>
+    <button>Tutorials & How-To</button>
+    <button>Reviews</button>
+    <button>Reactions</button>
+    <button>Vlogs</button>
+    <button>Travel</button>
+    <button>Food & Cooking</button>
+    <button>Fitness</button>
+    <button>Sports</button>
+    <button>Highlights</button>
+    <button>News</button>
+    <button>Documentaries</button>
+    <button>Science</button>
+    <button>Animation</button>
+    <button>Short Films</button>
+    <button>DIY & Crafts</button>
+    <button>ASMR</button>
+    <button>Pranks</button>
+    <button>Challenges</button>
+    <button>Interviews</button>
+    <button>Fashion</button>
+    <button>Beauty</button>
+    <button>Motivation</button>
+    <button>Finance</button>
+    <button>Business</button>
+    <button>Startups</button>
+    <button>Coding & Development</button>
+    <button>AI & Machine Learning</button>
+    <button>Photography</button>
+    <button>Filmmaking</button>
+    <button>History</button>
+    <button>Cars & Motors</button>
+    <button>Pets & Animals</button>
+    <button>Nature</button>
+    <button>Horror</button>
+    <button>Mystery</button>
+    <button>True Crime</button>
+    <button>Kids</button>
+    <button>Family</button>
+    <button>Culture</button>
+    <button>Memes & Internet Trends</button>
+  </div>
+
+  <div class="sidebar">
+    <div class="sidebar-buttons">
+      <a href="https://youtube.com"><button class="sidebar_home_button"><img class="sidebar_home" src="icons/home.png">Home</button></a>
+      <a href="https://www.youtube.com/shorts/"><button class="sidebar_shorts_button"><img class="sidebar_shorts" src="icons/shorts.png">Shorts</button></a>
+    </div>
+    <div class="divider">
+      <hr class="section-divider">
+    </div>
+    <div class="subscriptions">
+      <a href="https://www.youtube.com/feed/subscriptions"><p class="side_p1">Subscriptions <img class="right-arrow6" src="icons/right-arrow.png"></p></a>
+      <p class="side_none1">No Subscriptions</p>
+    <div class="divider">
+      <hr class="section-divider-custom1">
+    </div>
+    <div class="you_data">
+      <a href="https://www.youtube.com/feed/you"><p class="side_p2">You <img class="right-arrow7" src="icons/right-arrow.png"></p></a>
+    </div>
+      <a href="https://youtube.com/feed/history"><button class="sidebar_history_button"><img class="sidebar_history" src="icons/history.png">History</button></a>
+      <a href="https://youtube.com/feed/playlists"><button class="sidebar_playlists_button"><img class="sidebar_playlists" src="icons/playlists.png">Playlists</button></a>   
+      <a href="https://www.youtube.com/playlist?list=WL"><button class="sidebar_watch_later_button"><img class="sidebar_watch_later" src="icons/watch_later.png">Watch later</button></a>   
+      <a href="https://www.youtube.com/playlist?list=LL"><button class="sidebar_liked_vids_button"><img class="sidebar_liked_vids" src="icons/liked_vids.png">Liked videos</button></a>   
+      <a href="https://studio.youtube.com/channel/"><button class="sidebar_your_vids_button"><img class="sidebar_your_vids" src="icons/your_videos.png">Your videos</button></a>   
+      <a href="https://youtube.com/feed/downloads"><button class="sidebar_downloads_button"><img class="sidebar_downloads" src="icons/downloaded.png">Downloads</button></a>   
+    <div class="divider">
+      <hr class="section-divider">
+    </div>
+    <p class="side_p3">Explore</p>
+      <a href="https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ"><button class="sidebar_music_button"><img class="sidebar_music" src="icons/music.png">Music</button></a>
+      <a href="https://www.youtube.com/channel/UC4R8DWoMoI7CAwX8_LjQHig"><button class="sidebar_live_button"><img class="sidebar_live" src="icons/live.png">Live</button></a>   
+      <a href="https://www.youtube.com/gaming"><button class="sidebar_gaming_button"><img class="sidebar_gaming" src="icons/gaming.png">Gaming</button></a>   
+      <a href="https://www.youtube.com/channel/UCEgdi0XIXXZ-qJOFPf4JSKw"><button class="sidebar_sports_button"><img class="sidebar_sports" src="icons/trophy.png">Sports</button></a>
+    <div class="divider">
+      <hr class="section-divider">
+    </div>
+    <p class="side_p4">More from Youtube</p>
+      <a href="https://www.youtube.com/premium"><button class="sidebar_premium_button"><img class="sidebar_premium" src="icons/youtube-icon.png">YouTube Premium</button></a>
+      <a href="https://studio.youtube.com/"><button class="sidebar_studio_button"><img class="sidebar_studio" src="icons/youtube_studio.png">YouTube Studio</button></a>   
+      <a href="https://music.youtube.com/"><button class="sidebar_yt_music_button"><img class="sidebar_yt_music" src="icons/youtube-music.png">YouTube Music</button></a>   
+      <a href="https://www.youtubekids.com/?source=youtube_web"><button class="sidebar_kids_button"><img class="sidebar_kids" src="icons/youtube_kids.png">YouTube Kids</button></a>
+    <div class="divider">
+      <hr class="section-divider">
+    </div>
+      <a href="https://www.youtube.com/account"><button class="sidebar_settings_button"><img class="sidebar_settings" src="icons/settings.png">Settings</button></a>
+      <a href="https://www.youtube.com/reporthistory"><button class="sidebar_report_history_button"><img class="sidebar_report_history" src="icons/report-history.png">Report history</button></a>   
+      <button class="sidebar_help_button"><img class="sidebar_help" src="icons/help.png">Help</button>
+      <button class="sidebar_feedback_button"><img class="sidebar_feedback" src="icons/feedback.png">Send feedback</button>
+    <div class="divider">
+      <hr class="section-divider">
+    </div>
+    <div class="sidebar_about_container">
+      <a href="https://youtube.com/about/"><p>About</p></a>
+      <a href="https://youtube.com/about/press/"><p>Press</p></a>
+      <a href="https://youtube.com/about/copyright/"><p>Copyright</p></a>
+      <a href="https://youtube.com/t/contact_us/"><p>Contact us</p></a>
+      <a href="https://youtube.com/creators/"><p>Creators</p></a>
+      <a href="https://youtube.com/ads/"><p>Advertise</p></a>
+      <a href="https://developers.google.com/youtube"><p>Developers</p></a>
+      <div class="sidebar_info_container">
+        <a href="https://youtube.com/t/terms"><p>Terms</p></a>
+        <a href="https://youtube.com/t/privacy"><p>Privacy</p></a>
+        <a href="https://youtube.com/about/policies/"><p>Policy & Safety</p></a>
+        <a href="https://www.youtube.com/howyoutubeworks/?utm_campaign=ytgen&utm_source=ythp&utm_medium=LeftNav&utm_content=txt&u=https%3A%2F%2Fwww.youtube.com%2Fhowyoutubeworks%3Futm_source%3Dythp%26utm_medium%3DLeftNav%26utm_campaign%3Dytgen"><p>How YouTube works</p></a>
+        <a href="https://www.youtube.com/new"><p>Test new features</p></a>
+      </div>
+      <p class="sidebar_app_info">© 2026 Google LLC</p>
+    </div>
+    </div>
+  </div>
+
+  <main class="main-content">
+
+    <section class="video-section">
+      <div class="video-grid">
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-1.jpg" alt="Talking Tech and AI with Google CEO Sundar Pichai!">
+            <div class="video-time_length">14:20</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel">
+              <img class="pfp" src="channel_pfp/channel-1.jpeg" alt="Marques Brownlee">
+            </div>
+            <div class="video-info">
+              <p class="video-text">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+              <p class="video-author">Marques Brownlee</p>
+              <p class="video-stats">3.4M views <b>·</b> 6 months ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-2.webp" alt="Try Not To Laugh Challenge #9">
+            <div class="video-time_length">8:22</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel">
+              <img class="pfp" src="channel_pfp/channel-2.jpeg" alt="Markiplier">
+            </div>
+            <div class="video-info">
+              <p class="video-text">Try Not To Laugh Challenge #9</p>
+              <p class="video-author">Markiplier</p>
+              <p class="video-stats">19M views <b>·</b> 4 years ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-3.webp" alt="Crazy Tik Toks Taken Moments Before DISASTER">
+            <div class="video-time_length">9:13</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel">
+              <img class="pfp" src="channel_pfp/channel-3.jpeg" alt="SSSniperWolf">
+            </div>
+            <div class="video-info">
+              <p class="video-text">Crazy Tik Toks Taken Moments Before DISASTER</p>
+              <p class="video-author">SSSniperWolf</p>
+              <p class="video-stats">12M views <b>·</b> 1 year ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-4.webp" alt="The Simplest Math Problem No One Can Solve - Collatz Conjecture">
+            <div class="video-time_length">22:09</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel">
+              <img class="pfp" src="channel_pfp/channel-4.jpeg" alt="Veritasium">
+            </div>
+            <div class="video-info">
+              <p class="video-text">The Simplest Math Problem No One Can Solve - Collatz Conjecture</p>
+              <p class="video-author">Veritasium</p>
+              <p class="video-stats">18M views <b>·</b> 4 months ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-5.webp" alt="Kadane's Algorithm to Maximum Sum Subarray Problem">
+            <div class="video-time_length">11:17</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel">
+              <img class="pfp" src="channel_pfp/channel-5.jpeg" alt="CS Dojo">
+            </div>
+            <div class="video-info">
+              <p class="video-text">Kadane's Algorithm to Maximum Sum Subarray Problem</p>
+              <p class="video-author">CS Dojo</p>
+              <p class="video-stats">519K views <b>·</b> 5 years ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-6.webp" alt="Anything You Can Fit In The Circle I’ll Pay For">
+            <div class="video-time_length">19:59</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel">
+              <img class="pfp" src="channel_pfp/channel-6.jpeg" alt="MrBeast">
+            </div>
+            <div class="video-info">
+              <p class="video-text">Anything You Can Fit In The Circle I’ll Pay For</p>
+              <p class="video-author">MrBeast</p>
+              <p class="video-stats">141M views <b>·</b> 1 year ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const channelContainer = document.querySelector('.channel-container');
+    const channelIcon = document.querySelector('.my-channel-icon');
+
+    channelIcon.addEventListener('click', e => {
+      e.stopPropagation();
+      channelContainer.classList.toggle('active');
+    });
+
+    document.addEventListener('click', () => {
+      channelContainer.classList.remove('active');
+    });
+  </script>
+</body>
+</html>

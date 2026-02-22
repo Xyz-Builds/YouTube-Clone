@@ -1,0 +1,1037 @@
+.header {
+  display: flex;
+  align-items: center;
+  height: 55px;
+  position: fixed;
+  padding: 0 16px;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: inherit;
+  scrollbar-width: none;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  width: 200px;
+}
+
+.hamburger_menu {
+  height: 27px;
+  width: 23px;
+  margin-right: 26px;
+  margin-left: 12px;
+  margin-bottom: 2px;
+}
+
+.hamburger_menu:hover {
+  cursor: pointer;
+}
+
+.youtube_icon {
+  height: 25px;
+  margin-top: 0.8px;
+}
+
+.youtube_icon:hover {
+  cursor: pointer;
+}
+
+.middle-section {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  margin: 0 35px;
+  gap: 10px;
+}
+
+.search-container {
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  max-width: 640px;
+  min-width: 0;
+  padding: 0 12px;
+  justify-content: center;
+}
+
+.search_bar {
+  flex: 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  width: 0;
+  min-width: 0;
+  height: 44px;
+  font-size: 16px;
+  font-weight: 410;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  padding-left: 16px;
+  border-width: 3.5px;
+  border-color: rgb(253, 132, 132);
+  box-shadow: inset 2.5px 2.5px 8px rgba(232, 80, 80, 0.3);
+  box-sizing: border-box;
+  overflow: hidden;
+  outline: none;
+}
+
+.search_bar::placeholder {
+  font-family: Rubik, Arial, sans-serif;
+}
+
+.search-button {
+  width: 64px;
+  height: 44px;
+  background-color: rgb(244, 239, 239);
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  margin: 0;
+  border-width: 3.5px;
+  border-color: rgb(253, 132, 132);
+  border-left: none;
+  transition: box-shadow 0.4s ease-in-out;
+  box-sizing: border-box;
+}
+
+.search-button:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 20px rgba(240, 156, 156, 0.7);
+}
+
+.search-icon {
+  height: 34px;
+  width: 30px;
+}
+
+.voice-button {
+  display: flex;
+  align-items: center;
+  padding-bottom: 3px;
+  margin-top: 1px;
+  padding-right: 6px;
+  height: 45px;
+  width: 48px;
+  background-color: rgb(244, 239, 239);
+  justify-content: center;
+  border-radius: 40px;
+  border-width: 3.5px;
+  border-color: rgb(253, 132, 132);
+  transition: box-shadow 0.4s ease-in-out;
+}
+
+.voice-button:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 20px rgba(240, 156, 156, 0.7);
+}
+
+.voice-icon {
+  height: 28px;
+  width: 28px;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  max-width: 210px;
+}
+
+.upload-button,
+.youtube-apps-button,
+.notifications-button {
+  height: 40px;
+  width: 45px;
+  background-color: rgb(244, 239, 239);
+  border-width: 3.5px;
+  border-color: rgb(253, 132, 132);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.upload-button {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  padding-left: 9.5px;
+  padding-right: 34.5px;
+}
+
+.youtube-apps-button {
+  padding-top: 1.6px;
+  padding-right: 36px;
+}
+
+.notifications-button {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  padding-top: 1.6px;
+  padding-right: 38px;
+  margin-right: 7px;
+}
+
+.search-mobile-button {
+  visibility: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.upload-button,
+.youtube-apps-button,
+.notifications-button {
+  margin-top: 1px;
+}
+
+.upload-button:hover,
+.youtube-apps-button:hover,
+.notifications-button:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 20px rgba(240, 156, 156, 0.6);
+}
+
+.upload-icon,
+.youtube-apps-icon,
+.notifications-icon {
+  height: 30px;
+  width: 30px;
+}
+
+.channel-container {
+  position: relative;
+  z-index: 21;
+}
+
+.channel-items {
+  position: absolute;
+  top: 55px;
+  right: 0;
+  width: 260px;
+  padding-top: 3px;
+  padding-bottom: 18px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100vh - 90px);
+  z-index: 5000 !important;
+}
+
+.channel-items button {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.channel-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 10;
+  padding: 0;
+}
+
+.user-texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.user-text {
+  display: block;
+  font-family: Rubik, Roboto, Arial, sans-serif;
+  margin-top: 13px;
+  font-size: 15px;
+  font-weight: 480;
+}
+
+.user-text2 {
+  display: block;
+  font-size: 13px;
+  font-family: Rubik, Roboto, Arial, sans-serif;
+  margin-top: 1px;
+  margin-bottom: 5px;
+  font-weight: 480;
+  color: rgb(40, 43, 54);
+}
+
+.view-channel {
+  display: block;
+  font-size: 13px;
+  font-family: Rubik, Roboto, Arial, sans-serif;
+  margin-top: 1px;
+  font-weight: 480;
+  color: rgb(38, 65, 162);
+}
+
+.view-channel:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: blue;
+  text-decoration-thickness: 1.5;
+}
+
+hr.channel-divider {
+  display: block;
+  border: none;
+  border-top: 1.5px solid #ccc;
+  border-radius: 50%;
+  width: 260px;
+  margin-top: 10px;
+}
+
+.divider-channel {
+  place-items: center;
+  flex-basis: 100%;
+  width: 100%;
+}
+
+.divider {
+  place-items: center;
+}
+
+hr.section-divider {
+  border: none;
+  border-top: 1.5px solid #ccc;
+  border-radius: 50%;
+  width: 200px;
+  margin-top: 10px;
+}
+
+.channel-buttons {
+  overflow-y: visible;
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+
+.channel-buttons:hover {
+  scrollbar-width: thin;
+}
+
+.channel-container.active .channel-items {
+  visibility: visible;
+  opacity: 1;
+}
+
+.my-channel-button {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  margin: 5px 0 0 6px;
+}
+
+.my-channel-icon2 {
+  display: inline-block;
+  height: 39px;
+  width: 39px;
+  border-radius: 50%;
+  margin-left: 17px;
+  margin-right: 4px;
+  margin-top: 9px;
+}
+
+.my-channel-icon {
+  transition: box-shadow 0.3s ease-in-out;
+  display: inline-block;
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+}
+
+.my-channel-icon:hover {
+  box-shadow: 1px 1px 15px rgba(94, 93, 93, 0.5);
+  cursor: pointer;
+}
+
+.switch-account {
+  display: inline-block;
+  margin-bottom: -7px;
+  margin-right: 8.5px;
+  margin-left: 4px;
+  width: 21px;
+  height: 23px;
+}
+
+.switch-account-button {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 4px;
+  padding-left: 7px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  text-align: left;
+  background: white;
+  border: none;
+  font-weight: 450;
+  font-size: 14.5px;
+  font-family: Rubik, Arial, sans-serif;
+  transition: background-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.right-arrow {
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  top: 27%;
+  width: 14px;
+  height: 13px;
+  transform: translateY(1.5px);
+}
+
+.switch-account-button:hover {
+  background-color: rgb(209, 209, 209);
+  color: white;
+  cursor: pointer;
+}
+
+.switch-account-button:hover .switch-account {
+  content: url("../icons/switch-account\ -\ white.png");
+}
+
+.switch-account-button:hover .right-arrow {
+  content: url("../icons/right-arrow\ -\ white.png");
+}
+
+.google-account-button {
+  position: relative;
+  display: block;
+  padding: 4px;
+  padding-left: 7px;
+  padding-top: 3px;
+  padding-bottom: 9px;
+  margin: 0;
+  text-align: left;
+  background: white;
+  border: none;
+  font-weight: 450;
+  font-size: 14.5px;
+  font-family: Rubik, Arial, sans-serif;
+  transition: background-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.google-account {
+  display: inline-block;
+  margin-right: 9px;
+  margin-left: 5.5px;
+  width: 19px;
+  height: 19px;
+  transform: translateY(4px);
+}
+
+.google-account-button:hover {
+  background-color: rgb(209, 209, 209);
+  color: white;
+  cursor: pointer;
+}
+
+.google-account-button:hover .google-account {
+  content: url("../icons/google-icon\ -\ white.png");
+}
+
+.sign-out-button {
+  position: relative;
+  display: block;
+  padding: 4px;
+  padding-left: 7px;
+  padding-top: 3px;
+  padding-bottom: 9px;
+  margin: 0;
+  text-align: left;
+  background: white;
+  border: none;
+  font-weight: 450;
+  font-size: 14.5px;
+  font-family: Rubik, Arial, sans-serif;
+  transition: background-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.sign-out {
+  display: inline-block;
+  margin-right: 11px;
+  margin-left: 3.5px;
+  width: 19px;
+  height: 19px;
+  transform: translateY(4px);
+}
+
+.sign-out-button:hover {
+  background-color: rgb(209, 209, 209);
+  color: white;
+  cursor: pointer;
+}
+
+.sign-out-button:hover .sign-out {
+  content: url("../icons/sign-out\ -\ white.png");
+}
+
+hr.section-divider {
+  border: none;
+  border-top: 1.5px solid #ccc;
+  border-radius: 50%;
+  width: 200px;
+  margin-top: 10px;
+}
+
+.youtube-studio-button {
+  position: relative;
+  display: block;
+  padding: 4px;
+  padding-left: 7px;
+  padding-top: 4px;
+  padding-bottom: 10px;
+  margin: 0;
+  text-align: left;
+  background: white;
+  border: none;
+  font-weight: 450;
+  font-size: 14.5px;
+  font-family: Rubik, Arial, sans-serif;
+  transition: background-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.youtube-studio {
+  display: inline-block;
+  margin-right: 11px;
+  margin-bottom: -3px;
+  margin-left: 3px;
+  width: 24px;
+  height: 24px;
+  transform: translateY(3px);
+}
+
+.youtube-studio-button:hover {
+  background-color: rgb(209, 209, 209);
+  color: white;
+  cursor: pointer;
+}
+
+.youtube-studio-button:hover .youtube-studio {
+  content: url("../icons/youtube-studio\ -\ white.png");
+}
+
+.purchases-memberships-button {
+  position: relative;
+  display: block;
+  padding: 4px;
+  padding-left: 7px;
+  padding-top: 4px;
+  padding-bottom: 10px;
+  margin: 0;
+  text-align: left;
+  background: white;
+  border: none;
+  font-weight: 450;
+  font-size: 14.5px;
+  font-family: Rubik, Arial, sans-serif;
+  transition: background-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.purchases-memberships {
+  display: inline-block;
+  margin-right: 11px;
+  margin-bottom: -3px;
+  margin-left: 3px;
+  width: 24px;
+  height: 24px;
+  transform: translateY(3px);
+}
+
+.purchases-memberships-button:hover {
+  background-color: rgb(209, 209, 209);
+  color: white;
+  cursor: pointer;
+}
+
+.purchases-memberships-button:hover .purchases-memberships {
+  content: url("../icons/purchases-memberships\ -\ white.png");
+}
+
+hr.section-divider {
+  border: none;
+  border-top: 1.5px solid #ccc;
+  border-radius: 50%;
+  width: 200px;
+  margin-top: 10px;
+}
+
+.your-data-button {
+  position: relative;
+  display: block;
+  padding: 4px;
+  padding-left: 7px;
+  padding-top: 4px;
+  padding-bottom: 10px;
+  margin: 0;
+  text-align: left;
+  background: white;
+  border: none;
+  font-weight: 450;
+  font-size: 14.5px;
+  font-family: Rubik, Arial, sans-serif;
+  transition: background-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.your-data {
+  display: inline-block;
+  margin-right: 11px;
+  margin-bottom: -3px;
+  margin-left: 3px;
+  width: 24px;
+  height: 24px;
+  transform: translateY(3px);
+}
+
+.your-data-button:hover {
+  background-color: rgb(209, 209, 209);
+  color: white;
+  cursor: pointer;
+}
+
+.your-data-button:hover .your-data {
+  content: url("../icons/your-data\ -\ white.png");
+}
+
+.appearence-button {
+  position: relative;
+  display: block;
+  padding: 4px;
+  padding-left: 7px;
+  padding-top: 4px;
+  padding-bottom: 10px;
+  margin: 0;
+  text-align: left;
+  background: white;
+  border: none;
+  font-weight: 450;
+  font-size: 14.5px;
+  font-family: Rubik, Arial, sans-serif;
+  transition: background-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.appearence {
+  display: inline-block;
+  margin-right: 11px;
+  margin-bottom: -3px;
+  margin-left: 3px;
+  width: 24px;
+  height: 24px;
+  transform: translateY(3px);
+}
+
+.right-arrow2 {
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  top: 27%;
+  width: 14px;
+  height: 13px;
+  transform: translateY(1.5px);
+}
+
+.appearence-button:hover {
+  background-color: rgb(209, 209, 209);
+  color: white;
+  cursor: pointer;
+}
+
+.appearence-button:hover .appearence {
+  content: url("../icons/appearence\ -\ white.png");
+}
+
+.appearence-button:hover .right-arrow2 {
+  content: url("../icons/right-arrow\ -\ white.png");
+}
+
+.display-lang-button {
+  position: relative;
+  display: block;
+  padding: 4px;
+  padding-left: 7px;
+  padding-top: 4px;
+  padding-bottom: 10px;
+  margin: 0;
+  text-align: left;
+  background: white;
+  border: none;
+  font-weight: 450;
+  font-size: 14px;
+  font-family: Rubik, Arial, sans-serif;
+  transition: background-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.display-lang {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: -3px;
+  margin-left: 3px;
+  width: 24px;
+  height: 24px;
+  transform: translateY(3px);
+}
+
+.right-arrow3 {
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  top: 27%;
+  width: 14px;
+  height: 13px;
+  transform: translateY(1.5px);
+}
+
+.display-lang-button:hover {
+  background-color: rgb(209, 209, 209);
+  color: white;
+  cursor: pointer;
+}
+
+.display-lang-button:hover .display-lang {
+  content: url("../icons/display-lang\ -\ white.png");
+}
+
+.display-lang-button:hover .right-arrow3 {
+  content: url("../icons/right-arrow\ -\ white.png");
+}
+
+.restricted-mode-button {
+  position: relative;
+  display: block;
+  padding: 4px;
+  padding-left: 7px;
+  padding-top: 4px;
+  padding-bottom: 10px;
+  margin: 0;
+  text-align: left;
+  background: white;
+  border: none;
+  font-weight: 450;
+  font-size: 14.5px;
+  font-family: Rubik, Arial, sans-serif;
+  transition: background-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.restricted-mode {
+  display: inline-block;
+  margin-right: 11px;
+  margin-bottom: -3px;
+  margin-left: 3px;
+  width: 24px;
+  height: 24px;
+  transform: translateY(3px);
+}
+
+.right-arrow4 {
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  top: 27%;
+  width: 14px;
+  height: 13px;
+  transform: translateY(1.5px);
+}
+
+.restricted-mode-button:hover {
+  background-color: rgb(209, 209, 209);
+  color: white;
+  cursor: pointer;
+}
+
+.restricted-mode-button:hover .restricted-mode {
+  content: url("../icons/restricted-mode\ -\ white.png");
+}
+
+.restricted-mode-button:hover .right-arrow4 {
+  content: url("../icons/right-arrow\ -\ white.png");
+}
+
+.location-button {
+  position: relative;
+  display: block;
+  padding: 4px;
+  padding-left: 7px;
+  padding-top: 5px;
+  padding-bottom: 11px;
+  margin: 0;
+  text-align: left;
+  background: white;
+  border: none;
+  font-weight: 450;
+  font-size: 14.5px;
+  font-family: Rubik, Arial, sans-serif;
+  transition: background-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.location {
+  display: inline-block;
+  margin-right: 11px;
+  margin-bottom: -5px;
+  margin-left: 4.5px;
+  width: 21px;
+  height: 24px;
+  transform: translateY(2px);
+}
+
+.right-arrow5 {
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  top: 27%;
+  width: 14px;
+  height: 13px;
+  transform: translateY(1.5px);
+}
+
+.location-button:hover {
+  background-color: rgb(209, 209, 209);
+  color: white;
+  cursor: pointer;
+}
+
+.location-button:hover .location {
+  content: url("../icons/location\ -\ white.png");
+}
+
+.location-button:hover .right-arrow5 {
+  content: url("../icons/right-arrow\ -\ white.png");
+}
+
+.keyboard-shortcuts-button {
+  display: block;
+  padding: 4px;
+  padding-left: 7px;
+  padding-top: 10px;
+  padding-bottom: 11px;
+  margin: 0;
+  text-align: left;
+  background: white;
+  border: none;
+  font-weight: 450;
+  font-size: 14.5px;
+  font-family: Rubik, Arial, sans-serif;
+  transition: background-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.keyboard-shortcuts {
+  display: inline-block;
+  margin-right: 8px;
+  margin-bottom: -2px;
+  margin-left: 2.9px;
+  width: 25px;
+  height: 18px;
+  transform: translateY(2px);
+}
+
+.keyboard-shortcuts-button:hover {
+  background-color: rgb(209, 209, 209);
+  color: white;
+  cursor: pointer;
+}
+
+.keyboard-shortcuts-button:hover .keyboard-shortcuts {
+  content: url("../icons/keyboard\ -\ white.png");
+}
+
+.settings-button {
+  display: block;
+  padding: 4px;
+  padding-left: 7px;
+  padding-top: 7px;
+  padding-bottom: 12px;
+  margin: 0;
+  text-align: left;
+  background: white;
+  border: none;
+  font-weight: 450;
+  font-size: 14.5px;
+  font-family: Rubik, Arial, sans-serif;
+  transition: background-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.settings {
+  display: inline-block;
+  margin-right: 8px;
+  margin-bottom: -2px;
+  margin-left: 2.9px;
+  width: 23px;
+  height: 21px;
+  transform: translateY(3px);
+}
+
+.settings-button:hover {
+  background-color: rgb(209, 209, 209);
+  color: white;
+  cursor: pointer;
+}
+
+.settings-button:hover .settings {
+  content: url("../icons/settings\ -\ white.png");
+}
+
+.help-button {
+  display: block;
+  padding: 4px;
+  padding-left: 7px;
+  padding-top: 7px;
+  padding-bottom: 12px;
+  margin: 0;
+  text-align: left;
+  background: white;
+  border: none;
+  font-weight: 450;
+  font-size: 14.5px;
+  font-family: Rubik, Arial, sans-serif;
+  transition: background-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.help {
+  display: inline-block;
+  margin-right: 8px;
+  margin-bottom: -2px;
+  margin-left: 2.9px;
+  width: 23px;
+  height: 21px;
+  transform: translateY(3px);
+}
+
+.help-button:hover {
+  background-color: rgb(209, 209, 209);
+  color: white;
+  cursor: pointer;
+}
+
+.help-button:hover .help {
+  content: url("../icons/help\ -\ white.png");
+}
+
+.feedback-button {
+  display: block;
+  padding: 4px;
+  padding-left: 7px;
+  padding-top: 7px;
+  padding-bottom: 12px;
+  margin: 0;
+  text-align: left;
+  background: white;
+  border: none;
+  font-weight: 450;
+  font-size: 14.5px;
+  font-family: Rubik, Arial, sans-serif;
+  transition: background-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.feedback {
+  display: inline-block;
+  margin-right: 6px;
+  margin-bottom: -2px;
+  margin-left: 5px;
+  width: 23px;
+  height: 21px;
+  transform: translateY(3px);
+}
+
+.feedback-button:hover {
+  background-color: rgb(209, 209, 209);
+  color: white;
+  cursor: pointer;
+}
+
+.feedback-button:hover .feedback {
+  content: url("../icons/feedback\ -\ white.png");
+}
+
+@media (max-width: 650px) {
+  .search_bar {
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  .search-button {
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  .middle-section {
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  .upload-button {
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  .youtube-apps-button {
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  .notifications-button {
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  .my-channel-button {
+    margin: 0;
+    margin-top: 5px;
+    padding: 0;
+  }
+
+  .search-mobile {
+    visibility: visible;
+    width: 35px;
+    height: 30px;
+  }
+
+  .search-mobile-button {
+    visibility: visible;
+    background-color: inherit;
+    border: none;
+    padding: 3px 3.4px;
+    margin-right: 15px;
+    border-radius: 100%;
+    margin-top: 1px;
+    transition: background-color 0.3s ease-in-out,
+                filter 0.3s ease-in-out;
+  }
+
+  .search-mobile-button:hover {
+    cursor: pointer;
+    background-color: lightgray;
+    filter: invert(1);
+    border-radius: 100%;
+  }
+
+  .right-section {
+    max-width: 0;
+  }
+}

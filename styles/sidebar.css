@@ -1,0 +1,847 @@
+body {
+  padding-top: 125px;
+  padding-left: 255px;
+  padding-right: 18px;
+  padding-bottom: 10px;
+  background: white;
+  transition: padding-left 0.3s ease;
+  font-family: Roboto, Arial, sans-serif;
+  margin: 0;
+}
+
+.sidebar-buttons {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.sidebar {
+  width: 235px;
+  position: fixed;
+  left: 0;
+  top: 55px;
+  bottom: 0;
+  background-color: white;
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  z-index: 5;
+}
+
+.sidebar:hover {
+  scrollbar-width: thin;
+}
+
+.sidebar p {
+  font-weight: 450;
+}
+
+.sidebar_home {
+  width: 29px;
+  height: 25px;
+  margin-right: 30px;
+  margin-left: 10px;
+  filter: invert(1);
+  transition: filter 0.3s ease-in-out;
+}
+
+.sidebar_home_button {
+  display: flex;
+  flex: 1;
+  width: 219px;
+  height: 40px;
+  font-family: Roboto;
+  padding: 7px;
+  font-weight: 500;
+  background-color: black;
+  color: white;
+  border: none;
+  align-items: center;
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 13px;
+  transition: filter 0.1s ease-in-out,
+              color 0.3s ease-in-out;
+}
+
+.sidebar_home_button:hover {
+  filter: brightness(0.7);
+  cursor: pointer;
+}
+
+.sidebar_home_button:hover .sidebar_home {
+  filter: invert(1);
+}
+
+.sidebar_shorts {
+  width: 29px;
+  height: 29px;
+  margin-right: 30px;
+  margin-left: 10px;
+  transition: filter 0.3s ease-in-out
+}
+
+.sidebar_shorts_button {
+  display: flex;
+  flex: 1;
+  width: 219px;
+  height: 40px;
+  font-family: Roboto;
+  font-weight: 500;
+  padding: 7px;
+  background-color: white;
+  border: none;
+  align-items: center;
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 13px;
+  transition: filter 0.1s ease-in-out,
+              color 0.3s ease-in-out;
+}
+
+.sidebar_shorts_button:hover {
+  background-color: lightgray;
+  color: white;
+  cursor: pointer;
+}
+
+.sidebar_shorts_button:hover .sidebar_shorts {
+  filter: invert(1);
+}
+
+.subscriptions {
+  margin: 0;
+  padding: 0;
+}
+
+.side_p1 {
+  font-family: Rubik;
+  font-weight: 430;
+  padding: 10px 20px;
+  padding-left: 12px;
+  margin-left: 9px;
+  color: black;
+}
+
+.side_p1:hover {
+  background-color: rgb(233, 232, 232);
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.right-arrow6 {
+  width: 10px;
+  height: 10px;
+  margin-left: 10px;
+}
+
+.right-arrow7 {
+  width: 10px;
+  height: 10px;
+  margin-left: 10px;
+}
+
+.side_none1 {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 13px;
+  padding-right: 10px;
+  color: rgb(88, 88, 88);
+}
+
+.section-divider-custom1 {
+  border: none;
+  border-top: 1.5px solid #ccc;
+  border-radius: 50%;
+  width: 200px;
+  margin-top: 20px;
+}
+
+.you_data {
+  margin: 0;
+  padding: 0;
+  padding-left: 9px;
+}
+
+.side_p2 {
+  font-family: Rubik;
+  font-weight: 430;
+  padding: 10px 20px;
+  padding-left: 12px;
+  color: black;
+}
+
+.side_p2:hover {
+  background-color: rgb(233, 232, 232);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.sidebar_history {
+  width: 24px;
+  height: 23px;
+  margin-right: 33px;
+  margin-left: 12px;
+  transition: filter 0.3s ease-in-out
+}
+
+.sidebar_history_button {
+  display: flex;
+  flex: 1;
+  width: 219px;
+  height: 40px;
+  font-family: Roboto;
+  font-weight: 500;
+  padding: 7px;
+  background-color: white;
+  border: none;
+  align-items: center;
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 13px;
+  transition: filter 0.1s ease-in-out,
+              color 0.3s ease-in-out;
+}
+
+.sidebar_history_button:hover {
+  background-color: lightgray;
+  color: white;
+  cursor: pointer;
+}
+
+.sidebar_history_button:hover .sidebar_history {
+  filter: invert(1);
+}
+
+.sidebar_playlists {
+  width: 29px;
+  height: 29px;
+  margin-right: 30px;
+  margin-left: 10px;
+  transition: filter 0.3s ease-in-out
+}
+
+.sidebar_playlists_button {
+  display: flex;
+  flex: 1;
+  width: 219px;
+  height: 40px;
+  font-family: Roboto;
+  font-weight: 500;
+  padding: 7px;
+  background-color: white;
+  border: none;
+  align-items: center;
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 13px;
+  transition: filter 0.1s ease-in-out,
+              color 0.3s ease-in-out;
+}
+
+.sidebar_playlists_button:hover {
+  background-color: lightgray;
+  color: white;
+  cursor: pointer;
+}
+
+.sidebar_playlists_button:hover .sidebar_playlists {
+  filter: invert(1);
+}
+
+.sidebar_watch_later {
+  width: 29px;
+  height: 29px;
+  margin-right: 30px;
+  margin-left: 10px;
+  transition: filter 0.3s ease-in-out
+}
+
+.sidebar_watch_later_button {
+  display: flex;
+  flex: 1;
+  width: 219px;
+  height: 40px;
+  font-family: Roboto;
+  font-weight: 500;
+  padding: 7px;
+  background-color: white;
+  border: none;
+  align-items: center;
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 13px;
+  transition: filter 0.1s ease-in-out,
+              color 0.3s ease-in-out;
+}
+
+.sidebar_watch_later_button:hover {
+  background-color: lightgray;
+  color: white;
+  cursor: pointer;
+}
+
+.sidebar_watch_later_button:hover .sidebar_watch_later {
+  filter: invert(1);
+}
+
+.sidebar_liked_vids {
+  width: 29px;
+  height: 29px;
+  margin-right: 30px;
+  margin-left: 10px;
+  transition: filter 0.3s ease-in-out
+}
+
+.sidebar_liked_vids_button {
+  display: flex;
+  flex: 1;
+  width: 219px;
+  height: 40px;
+  font-family: Roboto;
+  font-weight: 500;
+  padding: 7px;
+  background-color: white;
+  border: none;
+  align-items: center;
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 13px;
+  transition: filter 0.1s ease-in-out,
+              color 0.3s ease-in-out;
+}
+
+.sidebar_liked_vids_button:hover {
+  background-color: lightgray;
+  color: white;
+  cursor: pointer;
+}
+
+.sidebar_liked_vids_button:hover .sidebar_liked_vids {
+  filter: invert(1);
+}
+
+.sidebar_your_vids {
+  width: 27px;
+  height: 24px;
+  margin-right: 30px;
+  margin-left: 10.5px;
+  transition: filter 0.3s ease-in-out
+}
+
+.sidebar_your_vids_button {
+  display: flex;
+  flex: 1;
+  width: 219px;
+  height: 40px;
+  font-family: Roboto;
+  font-weight: 500;
+  padding: 7px;
+  background-color: white;
+  border: none;
+  align-items: center;
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 13px;
+  transition: filter 0.1s ease-in-out,
+              color 0.3s ease-in-out;
+}
+
+.sidebar_your_vids_button:hover {
+  background-color: lightgray;
+  color: white;
+  cursor: pointer;
+}
+
+.sidebar_your_vids_button:hover .sidebar_your_vids {
+  filter: invert(1);
+}
+
+.sidebar_downloads {
+  width: 25px;
+  height: 24px;
+  margin-right: 31px;
+  margin-left: 11px;
+  transition: filter 0.3s ease-in-out
+}
+
+.sidebar_downloads_button {
+  display: flex;
+  flex: 1;
+  width: 219px;
+  height: 40px;
+  font-family: Roboto;
+  font-weight: 500;
+  padding: 7px;
+  background-color: white;
+  border: none;
+  align-items: center;
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 13px;
+  transition: filter 0.1s ease-in-out,
+              color 0.3s ease-in-out;
+}
+
+.sidebar_downloads_button:hover {
+  background-color: lightgray;
+  color: white;
+  cursor: pointer;
+}
+
+.sidebar_downloads_button:hover .sidebar_downloads {
+  filter: invert(1);
+}
+
+.side_p3 {
+  font-family: Rubik;
+  font-weight: 430;
+  padding: 10px 20px;
+  padding-left: 17px;
+  color: black;
+}
+
+.sidebar_music {
+  width: 25px;
+  height: 24px;
+  margin-right: 31px;
+  margin-left: 13px;
+  transition: filter 0.3s ease-in-out
+}
+
+.sidebar_music_button {
+  display: flex;
+  flex: 1;
+  width: 219px;
+  height: 40px;
+  font-family: Roboto;
+  font-weight: 500;
+  padding: 7px;
+  background-color: white;
+  border: none;
+  align-items: center;
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 13px;
+  transition: filter 0.1s ease-in-out,
+              color 0.3s ease-in-out;
+}
+
+.sidebar_music_button:hover {
+  background-color: lightgray;
+  color: white;
+  cursor: pointer;
+}
+
+.sidebar_music_button:hover .sidebar_music {
+  filter: invert(1);
+}
+
+.sidebar_live {
+  width: 28px;
+  height: 18px;
+  margin-right: 31px;
+  margin-left: 12px;
+  transition: filter 0.3s ease-in-out
+}
+
+.sidebar_live_button {
+  display: flex;
+  flex: 1;
+  width: 219px;
+  height: 40px;
+  font-family: Roboto;
+  font-weight: 500;
+  padding: 7px;
+  background-color: white;
+  border: none;
+  align-items: center;
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 13px;
+  transition: filter 0.1s ease-in-out,
+              color 0.3s ease-in-out;
+}
+
+.sidebar_live_button:hover {
+  background-color: lightgray;
+  color: white;
+  cursor: pointer;
+}
+
+.sidebar_live_button:hover .sidebar_live {
+  filter: invert(1);
+}
+
+.sidebar_gaming {
+  width: 32px;
+  height: 28px;
+  margin-right: 27px;
+  margin-left: 9.7px;
+  transition: filter 0.3s ease-in-out
+}
+
+.sidebar_gaming_button {
+  display: flex;
+  flex: 1;
+  width: 219px;
+  height: 40px;
+  font-family: Roboto;
+  font-weight: 500;
+  padding: 7px;
+  background-color: white;
+  border: none;
+  align-items: center;
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 13px;
+  transition: filter 0.1s ease-in-out,
+              color 0.3s ease-in-out;
+}
+
+.sidebar_gaming_button:hover {
+  background-color: lightgray;
+  color: white;
+  cursor: pointer;
+}
+
+.sidebar_gaming_button:hover .sidebar_gaming {
+  filter: invert(1);
+}
+
+.sidebar_sports {
+  width: 27px;
+  height: 24px;
+  margin-right: 29px;
+  margin-left: 13.3px;
+  transition: filter 0.3s ease-in-out
+}
+
+.sidebar_sports_button {
+  display: flex;
+  flex: 1;
+  width: 219px;
+  height: 40px;
+  font-family: Roboto;
+  font-weight: 500;
+  padding: 7px;
+  background-color: white;
+  border: none;
+  align-items: center;
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 13px;
+  transition: filter 0.1s ease-in-out,
+              color 0.3s ease-in-out;
+}
+
+.sidebar_sports_button:hover {
+  background-color: lightgray;
+  color: white;
+  cursor: pointer;
+}
+
+.sidebar_sports_button:hover .sidebar_sports {
+  filter: invert(1);
+}
+
+.side_p4 {
+  font-family: Rubik;
+  font-weight: 430;
+  padding: 10px 20px;
+  padding-left: 17px;
+  color: black;
+}
+
+.sidebar_premium {
+  width: 23px;
+  height: 17px;
+  margin-right: 28px;
+  margin-left: 13.3px;
+}
+
+.sidebar_premium_button {
+  display: flex;
+  flex: 1;
+  width: 219px;
+  height: 40px;
+  font-family: Roboto;
+  font-weight: 500;
+  padding: 7px;
+  background-color: white;
+  border: none;
+  align-items: center;
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 13px;
+  transition: color 0.3s ease-in-out;
+}
+
+.sidebar_premium_button:hover {
+  background-color: lightgray;
+  color: white;
+  cursor: pointer;
+}
+
+.sidebar_studio {
+  width: 22px;
+  height: 24px;
+  margin-right: 29px;
+  margin-left: 13.3px;
+}
+
+.sidebar_studio_button {
+  display: flex;
+  flex: 1;
+  width: 219px;
+  height: 40px;
+  font-family: Roboto;
+  font-weight: 500;
+  padding: 7px;
+  background-color: white;
+  border: none;
+  align-items: center;
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 13px;
+  transition: color 0.3s ease-in-out;
+}
+
+.sidebar_studio_button:hover {
+  background-color: lightgray;
+  color: white;
+  cursor: pointer;
+}
+
+.sidebar_yt_music {
+  width: 23px;
+  height: 23px;
+  margin-right: 29px;
+  margin-left: 13.3px;
+}
+
+.sidebar_yt_music_button {
+  display: flex;
+  flex: 1;
+  width: 219px;
+  height: 40px;
+  font-family: Roboto;
+  font-weight: 500;
+  padding: 7px;
+  background-color: white;
+  border: none;
+  align-items: center;
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 13px;
+  transition: color 0.3s ease-in-out;
+}
+
+.sidebar_yt_music_button:hover {
+  background-color: lightgray;
+  color: white;
+  cursor: pointer;
+}
+
+.sidebar_kids {
+  width: 23px;
+  height: 19px;
+  margin-right: 29px;
+  margin-left: 13.3px;
+}
+
+.sidebar_kids_button {
+  display: flex;
+  flex: 1;
+  width: 219px;
+  height: 40px;
+  font-family: Roboto;
+  font-weight: 500;
+  padding: 7px;
+  background-color: white;
+  border: none;
+  align-items: center;
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 13px;
+  transition: color 0.3s ease-in-out;
+}
+
+.sidebar_kids_button:hover {
+  background-color: lightgray;
+  color: white;
+  cursor: pointer;
+}
+
+.sidebar_settings {
+  width: 23px;
+  height: 22px;
+  margin-right: 29px;
+  margin-left: 13.3px;
+  transition: filter 0.3s ease-in-out
+}
+
+.sidebar_settings_button {
+  display: flex;
+  flex: 1;
+  width: 219px;
+  height: 40px;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 7px;
+  background-color: white;
+  border: none;
+  align-items: center;
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 13px;
+  transition: filter 0.1s ease-in-out,
+              color 0.3s ease-in-out;
+}
+
+.sidebar_settings_button:hover {
+  background-color: lightgray;
+  color: white;
+  cursor: pointer;
+}
+
+.sidebar_settings_button:hover .sidebar_settings {
+  filter: invert(1);
+}
+
+.sidebar_report_history {
+  width: 19px;
+  height: 20px;
+  margin-right: 32px;
+  margin-left: 14.7px;
+  transition: filter 0.3s ease-in-out
+}
+
+.sidebar_report_history_button {
+  display: flex;
+  flex: 1;
+  width: 219px;
+  height: 40px;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 7px;
+  background-color: white;
+  border: none;
+  align-items: center;
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 13px;
+  transition: filter 0.1s ease-in-out,
+              color 0.3s ease-in-out;
+}
+
+.sidebar_report_history_button:hover {
+  background-color: lightgray;
+  color: white;
+  cursor: pointer;
+}
+
+.sidebar_report_history_button:hover .sidebar_report_history {
+  filter: invert(1);
+}
+
+.sidebar_help {
+  width: 23px;
+  height: 22px;
+  margin-right: 29px;
+  margin-left: 13.3px;
+  transition: filter 0.3s ease-in-out
+}
+
+.sidebar_help_button {
+  display: flex;
+  flex: 1;
+  width: 219px;
+  height: 40px;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 7px;
+  background-color: white;
+  border: none;
+  align-items: center;
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 13px;
+  transition: filter 0.1s ease-in-out,
+              color 0.3s ease-in-out;
+}
+
+.sidebar_help_button:hover {
+  background-color: lightgray;
+  color: white;
+  cursor: pointer;
+}
+
+.sidebar_help_button:hover .sidebar_help {
+  filter: invert(1);
+}
+
+.sidebar_feedback {
+  width: 26px;
+  height: 25px;
+  margin-right: 26px;
+  margin-left: 13.5px;
+  transition: filter 0.3s ease-in-out
+}
+
+.sidebar_feedback_button {
+  display: flex;
+  flex: 1;
+  width: 219px;
+  height: 40px;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 7px;
+  background-color: white;
+  border: none;
+  align-items: center;
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 13px;
+  transition: filter 0.1s ease-in-out,
+              color 0.3s ease-in-out;
+}
+
+.sidebar_feedback_button:hover {
+  background-color: lightgray;
+  color: white;
+  cursor: pointer;
+}
+
+.sidebar_feedback_button:hover .sidebar_feedback {
+  filter: invert(1);
+}
+
+.sidebar_about_container {
+  padding-left: 25px;
+  padding-top: 6px;
+}
+
+.sidebar_about_container p {
+  display: inline-block;
+  color: rgb(110, 110, 110);
+  font-size: 13px;
+  margin-right: 4px;
+  font-weight: 600;
+  font-family: Roboto;
+}
+
+.sidebar_info_container {
+  margin-top: 9px;
+}
+
+.sidebar_about_container .sidebar_app_info {
+  margin-top: 13px;
+  margin-bottom: 11px;
+  font-weight: 400;
+  font-family: Roboto, Arial;
+}
+
+@media (max-width: 900px) {
+  .sidebar {
+    border-bottom-right-radius: 200px;
+    border-bottom-left-radius: 200px;
+    transform: translateY(-100%);
+    width: 220px;
+    left: 0;
+    right: 0;
+    height: auto;
+    z-index: 5;
+  }
+
+  body {
+    padding-left: 10px;
+    padding-top: 50px;
+  }
+}
