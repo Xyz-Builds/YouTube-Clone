@@ -230,7 +230,9 @@
 
 .channel-info {
   display: flex;
+  width: 240px;
   flex-wrap: wrap;
+  place-self: center;
   align-items: center;
   gap: 10px;
   position: sticky;
@@ -1033,5 +1035,9 @@ hr.section-divider {
 
   .right-section {
     max-width: 0;
+  }
+
+  .channel-items {
+    height: 520px;
   }
 }
