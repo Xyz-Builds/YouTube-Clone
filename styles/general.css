@@ -3,8 +3,19 @@
   scrollbar-color: rgb(223, 223, 223) white;
 }
 
+body {
+  font-family: Roboto, Rubik, Arial;
+  padding-top: 125px;
+  padding-left: 255px;
+  padding-right: 18px;
+  padding-bottom: 10px;
+  background: white;
+  transition: padding-left 0.3s ease;
+  font-family: Roboto, Arial, sans-serif; 
+  margin: 0;
+}
+
 p {
-  font-family: Roboto, Arial;
   margin-top: 0;
   margin-bottom: 0;
 }
