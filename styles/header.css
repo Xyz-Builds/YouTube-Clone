@@ -142,7 +142,7 @@
 }
 
 .search-button:hover .tooltip {
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .search-icon {
@@ -172,7 +172,7 @@
 }
 
 .voice-button:hover .tooltip {
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .voice-icon {
@@ -210,7 +210,7 @@
 }
 
 .upload-button:hover .tooltip {
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .youtube-apps-button {
@@ -223,7 +223,7 @@
 }
 
 .youtube-apps-button:hover .tooltip {
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .notifications-button {
@@ -239,7 +239,7 @@
 }
 
 .notifications-button:hover .tooltip {
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .search-mobile-button {
@@ -253,7 +253,7 @@
 }
 
 .search-mobile-button:hover .tooltip {
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .upload-button,
