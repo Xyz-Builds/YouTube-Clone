@@ -1089,6 +1089,10 @@ hr.section-divider {
     padding: 0;
   }
 
+  .my-channel-button:hover .tooltip {
+    opacity: 0;
+  }
+
   .search-button {
     visibility: hidden;
     margin: 0;
