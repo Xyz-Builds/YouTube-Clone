@@ -8,8 +8,7 @@
   top: 0;
   left: 0;
   right: 0;
-  background: inherit;
-  scrollbar-width: none;
+  background: white;
 }
 
 .tooltip {
@@ -28,6 +27,10 @@
   opacity: 0;
   transition: opacity 0.2s ease-in-out;
   text-wrap: nowrap;
+}
+
+.tooltip:hover {
+  opacity: 0 !important;
 }
 
 .left-section {
@@ -49,7 +52,8 @@
   transition: filter 0.2s ease-in-out;
 }
 
-.hamburger_menu_button:hover {
+.hamburger_menu:hover .hamburger_menu_button {
+  cursor: pointer;
   background: rgb(230, 230, 230);
 }
 
@@ -1083,6 +1087,10 @@ hr.section-divider {
 }
 
 @media (max-width: 650px) {
+  .header {
+    padding-left: 0;
+  }
+
   .search_bar {
     visibility: hidden;
     margin: 0;
@@ -1155,11 +1163,16 @@ hr.section-divider {
   }
   
   .hamburger_menu_button {
-    margin-left: 5px;
-    margin-right: 23px;
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
   }
 
   .right-section {
+    max-width: 0;
+  }
+
+  .left-section {
     max-width: 0;
   }
 
