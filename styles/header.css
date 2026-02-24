@@ -1148,7 +1148,12 @@ hr.section-divider {
     cursor: pointer;
     background-color: rgb(221, 221, 221);
     border-radius: 100%;
-  }  
+  }
+  
+  .hamburger_menu_button {
+    margin-left: 5px;
+    margin-right: 23px;
+  }
 
   .right-section {
     max-width: 0;
