@@ -104,10 +104,34 @@
   .video-grid {
     grid-template-columns: 1fr 1fr;
   }
+
+  .video-section p {
+    font-size: calc(1em - 2px);
+  }
+
+  .video-author {
+    font-size: 13px !important;
+  }
+
+  .video-stats {
+    font-size: 13px !important;
+  }
 }
 
 @media (max-width: 700px) {
   .video-grid {
     grid-template-columns: 1fr;
+  }
+
+  .video-section p {
+    font-size: 1em;
+  }
+
+  .video-author {
+    font-size: 14px !important;
+  }
+
+  .video-stats {
+    font-size: 14px !important;
   }
 }
