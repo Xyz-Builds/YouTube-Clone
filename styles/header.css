@@ -1086,7 +1086,14 @@ hr.section-divider {
   content: url("../icons/feedback\ -\ white.png");
 }
 
-@media (max-width: 768px) {
+.mobile-nav {
+  display: none;
+  visibility: hidden;
+}
+
+/* Mobile Display Changes */
+
+@media (max-width: 700px) {
   .header {
     padding-left: 0;
   }
@@ -1149,8 +1156,8 @@ hr.section-divider {
     border: none;
     padding: 3px 3.4px;
     background-color: white;
-    margin-right: 15px;
     border-radius: 100%;
+    margin: 0;
     margin-top: 1px;
     transition: background-color 0.3s ease-in-out,
                 filter 0.3s ease-in-out;
@@ -1178,5 +1185,65 @@ hr.section-divider {
 
   .channel-items {
     height: 520px;
+  }
+
+  .header {
+    padding-right: 10px;
+  }
+
+  .my-channel-icon {
+    visibility: hidden;
+    display: none;
+  }
+
+  .channel-container-mobile {
+    display: inline-block;
+    visibility: visible;
+  }
+
+  .my-channel-button-mobile {
+    background-color: inherit;
+    width: fit-content;
+    border: none;
+  }
+
+  .my-channel-icon-mobile {
+    border-radius: 100%;
+    width: 30.5px;
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    transition: box-shadow 0.2s ease-in-out;
+  }
+
+  .my-channel-icon-mobile:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
+
+  .channel-mobile-p {
+    visibility: visible;
+    font-family: Roboto, Rubik, Arial, sans-serif;
+    place-self: center;
+    margin: 0;
+    padding: 0;
+    padding-right: 5px;
+    font-size: 13.7px;
+    font-weight: bolder;
+  }
+
+  .mobile-nav {
+    display: grid;
+    justify-content: right;
+    grid-template-columns: 47px;
+    align-items: center;
+    position: fixed;
+    visibility: visible;
+    background-color: rgb(250, 250, 250);
+    height: 55px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
   }
 }
