@@ -1086,7 +1086,7 @@ hr.section-divider {
   content: url("../icons/feedback\ -\ white.png");
 }
 
-@media (max-width: 650px) {
+@media (max-width: 768px) {
   .header {
     padding-left: 0;
   }
