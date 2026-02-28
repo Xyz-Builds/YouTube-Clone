@@ -1183,10 +1183,6 @@ hr.section-divider {
     max-width: 0;
   }
 
-  .channel-items {
-    height: 520px;
-  }
-
   .header {
     padding-right: 10px;
   }
@@ -1197,6 +1193,7 @@ hr.section-divider {
   }
 
   .channel-container-mobile {
+    position: relative;
     display: inline-block;
     visibility: visible;
   }
@@ -1209,10 +1206,10 @@ hr.section-divider {
 
   .my-channel-icon-mobile {
     border-radius: 100%;
-    width: 30.5px;
+    width: 26px;
     margin: 0;
     padding: 0;
-    height: 30px;
+    height: 26px;
     transition: box-shadow 0.2s ease-in-out;
   }
 
@@ -1227,9 +1224,9 @@ hr.section-divider {
     place-self: center;
     margin: 0;
     padding: 0;
-    padding-right: 5px;
-    font-size: 13.7px;
-    font-weight: bolder;
+    padding-right: 10px;
+    font-size: 10px;
+    font-weight: 400;
   }
 
   .mobile-nav {
@@ -1240,10 +1237,26 @@ hr.section-divider {
     position: fixed;
     visibility: visible;
     background-color: rgb(250, 250, 250);
-    height: 55px;
+    height: 50px;
     bottom: 0;
     left: 0;
     right: 0;
     z-index: 1000;
+  }
+
+  .mobile-nav .channel-container-mobile .channel-items {
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+    top: auto;
+    max-height: 60vh;
+    max-width: 80%;
+  }
+
+  .channel-container.active .channel-items,
+  .channel-container-mobile.active .channel-items {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
   }
 }

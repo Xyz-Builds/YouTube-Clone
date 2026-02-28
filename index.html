@@ -670,18 +670,27 @@
   </nav>
 
   <script>
-    const channelContainer = document.querySelector('.channel-container');
-    const channelIcon = document.querySelector('.my-channel-icon');
+    const containers = document.querySelectorAll(
+      '.channel-container, .channel-container-mobile'
+    );
 
-    channelIcon.addEventListener('click', e => {
-      e.stopPropagation();
-      channelContainer.classList.toggle('active');
+    containers.forEach(container => {
+      const button = container.querySelector('button');
+
+      if (!button) return;
+
+      button.addEventListener('click', function (e) {
+        e.stopPropagation();
+        container.classList.toggle('active');
+      });
     });
 
-    document.addEventListener('click', e => {
-      if (!channelContainer.contains(e.target)) {
-        channelContainer.classList.remove('active');
-      }
+    document.addEventListener('click', function (e) {
+      containers.forEach(container => {
+        if (!container.contains(e.target)) {
+          container.classList.remove('active');
+        }
+      });
     });
   </script>
 
